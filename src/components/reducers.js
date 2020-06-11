@@ -1,6 +1,6 @@
 import { CREATE_TODO, REMOVE_TODO } from "./action";
 
-export const todos = (state, action) => {
+export const todos = (state=[], action) => {
   const { type, payload } = action;
 
   switch (type) {
@@ -20,6 +20,6 @@ export const todos = (state, action) => {
       break;
 
     default:
-      break;
+        return state;
   }
 };
