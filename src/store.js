@@ -4,5 +4,4 @@ import {todos} from './components/reducers';
 const reducers = {todos};
 
 const rootReducers = combineReducers(reducers);
-
 export const configureStore  = () => createStore(rootReducers);
