@@ -14,7 +14,7 @@ function TodoListItem({todo, onRemovedPressed, onCompletedPressed}) {
             }
             
             <button 
-            onClick={()=> onRemovedPressed(todo.text) }
+            onClick={()=> onRemovedPressed(todo.id) }
             className="remove-button">Remove</button>
             </div>
             
